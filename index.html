@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- // Created by Yash Kumar Banjare..... SSTC -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Kumar Banjare</title>
+  <!-- YASH -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    body {
+      background-image: url('Tech3.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      min-height: 100vh;/* YASH */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;/* YASH */
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;/* YASH */
+      text-align: center;
+      width: 100%;
+    }
+/* YASH */
+    .container {
+      text-align: center;
+      padding: 20px;/* YASH */
+      animation: fadeIn 1s ease-in-out;
+      max-width: 100%;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;/* YASH */
+    }
+
+    .btn {
+      padding: 12px 30px;/* YASH */
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      border: 3px solid #fff;/* YASH */
+      border-radius: 12px;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;/* YASH */
+      background: rgba(255, 255, 255, 0.3);
+      transition: all 0.4s ease;
+      transform: skewX(-30deg);
+    }
+/* YASH */
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:hover {/* YASH */
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+/* YASH */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+      margin: 20px auto;
+      object-fit: cover;/* YASH */
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    .profile-pic:hover {
+      transform: scale(1.1) rotate(3deg);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-color: #69a3ff;
+    }/* YASH */
+
+    .intro {
+      margin-bottom: 30px;
+    }/* YASH */
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;/* YASH */
+      font-size: 14px;
+      width: 100%;
+      margin-top: auto;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    @keyframes fadeIn {/* YASH */
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;/* YASH */
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .btn {
+        padding: 10px 20px;
+        font-size: 14px;/* YASH */
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+      .intro h2 {
+        font-size: 20px;
+      }
+
+      .intro p {/* YASH */
+        font-size: 16px;
+      }
+    }
+/* YASH */
+    @media (max-width: 480px) {
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      /* // Created by Yash Kumar Banjare..... SSTC  */
+
+
+      .btn {
+        width: 80%;
+        max-width: 300px;
+      }
+/* YASH */
+      .intro h2 {
+        font-size: 18px;
+      }
+/* YASH */
+      .intro p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- // Created by Yash Kumar Banjare..... SSTC   -->
+
+  <header>
+    <h1>Hello!</h1>
+  </header>
+<!-- YASH -->
+  <div class="container">
+    <img src="Yashimage19.png" alt="Yash Banjare" class="profile-pic">            <!-- YASH -->
+<!-- YASH -->
+    <div class="intro">
+      <h2>I’m Yash Banjare</h2>
+      <p>Welcome To My Personal Website</p>
+    </div>
+<!-- // Created by Yash Kumar Banjare..... SSTC   -->
+    <div class="button-container">
+      <div class="btn" onclick="window.location.href='part2.html'">My Profile</div>
+      <div class="btn" onclick="window.location.href='part3.html'">Social Links</div><!-- YASH -->
+      <div class="btn" onclick="window.location.href='part4.html'">Other Links</div>
+    </div>
+  </div><!-- YASH -->
+
+  <footer>
+    <p>Created by Yash Banjare &copy; 2025. All rights reserved.</p>
+  </footer>
+<!-- YASH -->
+</body>
+</html>
