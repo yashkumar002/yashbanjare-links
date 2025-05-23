@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!-- YASH -->
+  <title>Social Buttons</title>
+    <!-- // Created by Yash Kumar Banjare..... SSTC -->
+  <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;/* YASH */
+      min-height: 100vh;
+      background: linear-gradient(135deg, #11accf, #032264);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* // Created by Yash Kumar Banjare..... SSTC  */
+
+
+    h1 {
+      color: #ffffff;
+      font-size: 40px;/* YASH */
+      margin: 40px 0 20px;
+      animation: fadeInDown 1.5s ease-out;
+      text-shadow: 2px 2px 10px #00ffc8;
+    }
+/* // Created by Yash Kumar Banjare..... SSTC  */
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {/* YASH */
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .button-container {/* YASH */
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 60px; /* space at the bottom */
+    }
+
+      /* // Created by Yash Kumar Banjare..... SSTC  */
+
+    .custom-btn {
+      display: flex;
+      align-items: center;/* YASH */
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px 25px;
+      font-size: 18px;/* YASH */
+      font-weight: bold;
+      color: #130f0f;
+      border: 2px solid #00ffc8;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #00c9ff, #92fe9d);
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 10px #00ffc8, 0 0 20px #00ffc8 inset;
+      min-width: 340px;
+      text-decoration: none;
+    }/* YASH */
+
+    .custom-btn:hover {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      border-color: #ff6a00;
+      box-shadow: 0 0 15px #ff6a00, 0 0 25px #ff6a00 inset;
+      transform: scale(1.05);
+    }/* YASH */
+
+    .btn-icon-left {
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-icon-left img {/* YASH */
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;/* YASH */
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px #00ffc8;
+      -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255,255,255,0.2));
+    }
+
+    .btn-text {
+      flex-grow: 1;
+      text-align: center;
+    }/* YASH */
+
+    .btn-icon-right i {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body><!-- YASH -->
+  <h1>Let's Connect</h1>
+  <div class="button-container"><!-- YASH -->
+    <a class="custom-btn" href="https://github.com/yashkumar002" target="_blank">
+      <span class="btn-icon-left"><img src="Yashimage9.jpeg" alt="icon"></span>
+      <span class="btn-text">View GitHub</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-github"></i></span>
+    </a>
+      <!-- // Created by Yash Kumar Banjare..... SSTC -->
+
+    <a class="custom-btn" href="https://www.linkedin.com/in/yash-banjare-199b76264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+      <span class="btn-icon-left"><img src="Yashimage5.jpg" alt="icon"></span>
+      <span class="btn-text">Connect on LinkedIn</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-linkedin-in"></i></span>
+    </a>
+      <!-- // Created by Yash Kumar Banjare..... SSTC -->
+
+    <a class="custom-btn" href="https://youtube.com/@yproblemsolver?si=nStV_JhDju5pxzTC" target="_blank">
+      <span class="btn-icon-left"><img src="Yashimage12.jpeg" alt="icon"></span>
+      <span class="btn-text">Subscribe YouTube</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-youtube"></i></span>
+    </a>
+<!-- YASH -->
+    <a class="custom-btn" href="https://chat.whatsapp.com/GrTsHfI1W089gPHMYPbo7y" target="_blank"><!-- YASH -->
+      <span class="btn-icon-left"><img src="Yashimage13.jpg" alt="icon"></span>
+      <span class="btn-text">Chat on WhatsApp</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-whatsapp"></i></span>
+    </a>
+  <!-- // Created by Yash Kumar Banjare..... SSTC -->
+   <a class="custom-btn" href="https://www.instagram.com/hackwith_yash?igsh=d2V5emlraTVscndh" target="_blank"><!-- YASH -->
+      <span class="btn-icon-left"><img src="Yashimage6.webp" alt="icon"></span>
+      <span class="btn-text">Follow On Instagram </span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-instagram"></i>
+</span>
+    </a><!-- YASH -->
+    <a class="custom-btn" href="https://t.me/earn_with_tips" target="_blank"><!-- YASH -->
+      <span class="btn-icon-left"><img src="Earn1.jpg" alt="icon"></span>
+      <span class="btn-text">Join on Telegram</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-telegram"></i></span>
+    </a><!-- YASH -->
+
+    <a class="custom-btn" href="https://twitter.com/" target="_blank">
+      <span class="btn-icon-left"><img src="Yashimage4.jpg" alt="icon"></span>
+      <span class="btn-text">Follow on Twitter</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-twitter"></i></span>
+    </a>
+  <!-- // Created by Yash Kumar Banjare..... SSTC -->
+    <a class="custom-btn" href="https://facebook.com/" target="_blank"><!-- YASH -->
+      <span class="btn-icon-left"><img src="Yashimage7.jpg" alt="icon"></span>
+      <span class="btn-text">Connect on Facebook</span><!-- YASH -->
+      <span class="btn-icon-right"><i class="fab fa-facebook-f"></i></span>
+    </a>
+  </div><!-- YASH -->
+</body>
+</html>
